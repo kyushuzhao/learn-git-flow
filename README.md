@@ -12,7 +12,7 @@
 * master：`origin/master` 源代码 `HEAD` 总是反映*生产就绪*状态的分支
 * develop: `origin/develop` 源代码  `HEAD` 始终反映了下一版本中最新交付的开发更改的状态
 
-![main-branches](/Users/joker/Github/learn-git-flow/assets/main-branches.png)
+![main-branches](./assets/main-branches.png)
 
 > 当 `develop` 分支中的源代码稳定达到发版要求并准备发版时，合并当前版本代码至`master`， 然后使用版本号进行标记。这时 `master` 就是一个新的生产版本，当然我们也可以配置 `git hook` 的脚本自动构建并推送到我们的生产服务器
 
@@ -34,7 +34,7 @@
 
 功能分支主要用于为即将发布或将来的版本开发新功能，功能分支只要处于开发阶段，就会一直存在，但最终会合并回 `develop` 分支（将新功能添加到即将发布的版本中）或者丢弃(需求彻底作废时)。
 
-![Git Flow](/Users/joker/Github/learn-git-flow/assets/fb.png)
+![Feature Branches](./assets/fb.png)
 
 ##### Release Branches
 
@@ -66,9 +66,9 @@
   >
   > 在发布分支完成时，根据上面流程合并回 `develop` 时，就包含了热修复的代码
   >
-  > 如果 `develop` 立即需要此错误修复并且不能等待发布分支完成，也可以立即以安全地方式将错误修复合并到 `develop` 
+  > 如果 `develop` 立即需要此错误修复并且不能等待发布分支完成，也可以立即以安全地方式将错误修复合并到 `develop`
 
-  ![hotfix-branches](/Users/joker/Github/learn-git-flow/assets/hotfix-branches.png)
+  ![hotfix-branches](./assets/hotfix-branches.png)
 
 #### 参考建议
 
