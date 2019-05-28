@@ -36,6 +36,19 @@
 
 ![Git Flow](/Users/joker/Github/learn-git-flow/assets/fb.png)
 
+##### Release Branches
+
+* 创建发布
+由 `develop` 分支检出，必须合并回 `develop` 和 `master`，命名约定：
+
+  > 格式：`release-` + `版本号` 例如：release-1.0.1
+
+  发布分支为预发布的生产版本，每个发布分支都分配了一个版本号，允许修复小错误并为发布准备元数据	（版本号、构建日期等）
+
+* 完成发布
+
+  当 `release` 分支达到发版标准时，合并至 `master` 分支，并在 `master` 打上对应版本的 `tag` 号标识，最后将发布分支上 所做的更改合并回 `develop` 分支，以便将来的版本也包含在 `release` 分支上做的错误修复
+
 
 #### 参考建议
 
