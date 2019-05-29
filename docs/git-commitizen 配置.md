@@ -143,3 +143,5 @@ $ standard-version
 ~~~shell
 $ standard-version --help
 ~~~
+
+> 由于能力有限，若有错误与不当之处，请批评指正。
